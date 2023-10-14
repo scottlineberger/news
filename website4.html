@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The People's Daily Brief</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<style>
+	table, th, td {
+  border:1px solid black;
+}
+	
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+	
+.body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: grey;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+	
+/* Style the buttons inside the tab */
+.tab.button_r {
+  background-color: red;
+	color: blue;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+	
+/* Change background color of buttons on hover */
+.tab button_r:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button_r.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+	
+	
+.button {
+  background-color: #0033cc;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button:hover {
+  background-color: #66b3ff;
+	}
+.button_red {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button_red:hover {
+  background-color: #ffb3b3;
+}
+	
+.button {
+  background-color: #0033cc;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+	
+h1.large {
+  font-size: 300%;
+}
+	
+.b {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+	
+#grey {
+  background-color: #cccccc;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+	
+#r {
+  background-color: #ffcccc;
+  border: none;
+  color: red;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+	
+#r:hover {
+  background-color: #ff0000;
+	color: white;
+	}
+	
+#blue {
+  background-color: #ccccff;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+#blue:hover {
+	  background-color: #0066ff;
+	color: white;
+}
+	
+</style>
+	
+	
+
+	
+	
+	<h1 class="large">US Newspapers</h1>
+		<button class="button_red">Red Pill</button>
+		<button class="button">Blue Pill</button>
+   	
+	
+	<div class="tab">
+		<form action="https://www.nytimes.com/" method="get" target="_blank">
+     		<button id="blue" type="submit">NY Times</button> </form>
+		<form action="https://www.washingtonpost.com/" method="get" target="_blank">
+         <button id="blue" type="submit">Washington Post</button> </form> 
+		<form action="https://www.wsj.com/" method="get" target="_blank">
+         <button id="grey" type="submit">Wall Street Journal</button> </form> 		
+		
+		<form action="https://www.latimes.com/" method="get" target="_blank">
+         <button id=r type="submit">LA Times</button></form>
+   	
+		<form action="https://www.usatoday.com//" method="get" target="_blank">
+         <button id="grey" type="submit">USA Today</button></form>
+		
+		<form action="https://www.theepochtimes.com/" method="get" target="_blank">
+         <button id="r" type="submit">Epoch Times</button></form>
+		<form action="https://nypost.com/" method="get" target="_blank">
+         <button id="r" type="submit">NY Post</button> </form>
+		<form action="chicagotribune.com" method="get" target="_blank">
+         <button id="blue" type="submit">Chicago Tribune</button> </form>
+		<form action="https://www.the-sun.com/" method="get" target="_blank">
+         <button id="r" type="submit">US Sun</button></form>
+		<form action="https://www.newsday.com" method="get" target="_blank">
+         <button id="r"  type="submit">Newsday</button> </form>		
+		<form action="http://www.startribune.com" method="get" target="_blank">
+         <button id="r"  type="submit">Star Tribune</button> </form>	
+		<form action="https://www.inquirer.com/" method="get" target="_blank">
+         <button id="r"  type="submit">Philly Inquirer</button> </form>	
+		<form action="https://www.bostonglobe.com/" method="get" target="_blank">
+         <button id="blue" type="submit">Boston Globe</button> </form>	
+		<form action="https://www.dallasnews.com/" method="get" target="_blank">
+         <button id="r"  type="submit">Dallas Morning News</button> </form>
+		<form action="https://www.nydailynews.com/" method="get" target="_blank">
+         <button id="r" type="submit">NY Daily News</button> </form>
+		<form action="https://www.oregonlive.com/" method="get" target="_blank">
+         <button id="blue" type="submit">Oregonian </button> </form>
+		<form action="https://www.freep.com/" method="get" target="_blank">
+         <button type="submit">Detroit Free Press</button> </form>
+		<form action="https://www.mlive.com/news/grand-rapids/" method="get" target="_blank">
+         <button type="submit">Grand Rapids Press</button> </form>
+		<form action="https://www.miamiherald.com/" method="get" target="_blank">
+         <button type="submit">Miami Herald </button> </form>
+		<form action="https://www.nj.com/starledger/" method="get" target="_blank">
+         <button type="submit">NJ Star-Ledger</button> </form>
+		<form action="https://chicago.suntimes.com/" method="get" target="_blank">
+         <button type="submit">Chicago Suntimes</button> </form>
+		<form action="https://www.washingtontimes.com/" method="get" target="_blank">
+         <button id="r" type="submit">Washington Times</button> </form>
+		<form action="https://www.baltimoresun.com/" method="get" target="_blank">
+         <button type="submit">The Baltimore Sun</button> </form>
+		<form action="https://www.csmonitor.com/" method="get" target="_blank">
+         <button  type="submit">CS Monitor</button> </form>
+		
+		<form action="https://www.sfchronicle.com/" method="get" target="_blank">
+         <button id="blue" type="submit">San Francisco Chronicle</button> </form>		
+		
+				<form action="https://www.sacbee.com/" method="get" target="_blank">
+         <button id="blue" type="submit">Sacramento Bee</button> </form>
+	
+		
+		
+		<form action="https://www.frontpages.com/" method="get" target="_blank">
+         <button type="submit">Frontpages</button> </form>
+		<form action="https://www.freedomforum.org/todaysfrontpages/#1" method="get" target="_blank">
+         <button type="submit">Front Page</button> </form>
+		
+		
+		</div>
+	
+	
+		
+	<div class="tab1">
+		<form action="https://www.nytimes.com/" method="get" target="_blank">
+     		<button class="b" type="submit">NY Times</button> </form>
+		<form action="https://www.washingtonpost.com/" method="get" target="_blank">
+         <button type="submit">Washington Post</button> </form> 
+		<form action="https://www.wsj.com/" method="get" target="_blank">
+         <button type="submit">WSJ</button></form>
+		<form action="https://www.latimes.com/" method="get" target="_blank">
+         <button type="submit">LA Times</button></form>
+   	<form action="https://www.usatoday.com//" method="get" target="_blank">
+         <button type="submit">USA Today</button></form>
+		<form action="https://www.theepochtimes.com/" method="get" target="_blank">
+         <button type="submit">Epoch Times</button></form>
+		<form action="https://nypost.com/" method="get" target="_blank">
+         <button type="submit">NY Post</button> </form>
+
+		</div>
+
+
+		
+
+	
+	
+
+	
+
+   
+</body>
+</html> 
