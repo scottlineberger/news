@@ -4,6 +4,7 @@
 	<title>PDB</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+/*style for PDB title   */
 #title {
 	color: whitesmoke;
 	font-size: 70px;
@@ -12,6 +13,7 @@
 	border-radius: 16px;
 	background-color:DodgerBlue;
 }
+/*not sure this is doing anything */
 table, th, td {
   border:13px solid black;
 }
@@ -29,7 +31,7 @@ table, th, td {
   font-size: 30px;
 }
 .body {font-family: Arial;}
-/* Style the tab */
+/* Style the tab; tab = box around */
 .tab {
   overflow: hidden;
   border: 3px solid #ccc;
@@ -64,7 +66,8 @@ table, th, td {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;		
+  font-size: 17px;	
+}	
 /* Change background color of buttons on hover */
 .tab button_r:hover {
   background-color: #ddd;
@@ -188,10 +191,9 @@ table, th, td {
 
 	<h1>Local US Newspapers</h1>	
 	<div class="tab">
-
-     <form action="https://www.latimes.com/" method="get" target="_blank">
+     	<form action="https://www.latimes.com/" method="get" target="_blank">
          <button type="submit">LA Times</button></form>
-   	<form action="https://www.usatoday.com//" method="get" target="_blank">
+   		<form action="https://www.usatoday.com//" method="get" target="_blank">
          <button type="submit">USA Today</button></form>
 		<form action="https://www.theepochtimes.com/" method="get" target="_blank">
          <button type="submit">Epoch Times</button></form>
