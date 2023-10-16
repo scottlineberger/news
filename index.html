@@ -84,7 +84,7 @@ table, th, td {
   border-top: none;
 }	
 .button {
-  background-color: #0033cc;
+  background-color: #053fec;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -124,11 +124,15 @@ table, th, td {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
+}
+#grey:hover {
+	background-color: #272829;
+	color: white;
 }	
 #r {
-  background-color: #ffcccc;
+  background-color: #e70909;
   border: none;
-  color: red;
+  color: whitesmoke;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -142,9 +146,9 @@ table, th, td {
 	color: white;
 }
 #blue {
-  background-color: #ccccff;
+  background-color: #0707b5;
   border: none;
-  color: black;
+  color: whitesmoke;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -154,9 +158,8 @@ table, th, td {
   border-radius: 16px;
 }
 #blue:hover {
-	  background-color: #0066ff;
+	background-color: #0066ff;
 	color: white;
-
 }
 	</style>
 </head>
@@ -166,18 +169,17 @@ table, th, td {
 	<h1>National US Newspapers</h1>	
 	<div class="tab">
 		<form action="https://www.nytimes.com/" method="get" target="_blank">
-     	<button id="blue" class=button_r type="submit">NY Times</button> </form>
+     	 <button id="blue" class=button_r type="submit">NY Times</button> </form>
 	 	<form action="https://www.washingtonpost.com/" method="get" target="_blank">
          <button id="blue" class=button_r type="submit">Washington Post</button> </form> 
 		<form action="https://www.wsj.com/" method="get" target="_blank">
          <button id=r type="submit">WSJ</button></form>
-   	<form action="https://www.usatoday.com//" method="get" target="_blank">
-         <button type="submit">USA Today</button></form>
-
-		 <form action="https://www.frontpages.com/" method="get" target="_blank">
-			<button type="submit">Frontpages</button> </form>
-		   <form action="https://www.freedomforum.org/todaysfrontpages/#1" method="get" target="_blank">
-			<button type="submit">Front Page</button> </form>
+   		<form action="https://www.usatoday.com//" method="get" target="_blank">
+         <button id="grey" type="submit">USA Today</button></form>
+		<form action="https://www.frontpages.com/" method="get" target="_blank">
+		 <button id="grey" type="submit">Frontpages</button> </form>
+		<form action="https://www.freedomforum.org/todaysfrontpages/#1" method="get" target="_blank">
+		 <button id="grey" type="submit">Front Page</button> </form>
 		</div>
 
 
