@@ -3,201 +3,43 @@
 <head>      
 	<title>PDB</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-/*style for PDB title   */
-#title {
-	color: whitesmoke;
-	font-size: 70px;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-	border-radius: 16px;
-	background-color:DodgerBlue;
-}
-/*not sure this is doing anything */
-table, th, td {
-  border:13px solid black;
-}
-.flex-container {
-  display: flex;
-  background-color: #f1f1f1;
-}
-.flex-container > div {
-  background-color: DodgerBlue;
-  color: white;
-  width: 300px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-.body {font-family: Arial;}
-/* Style the tab; tab = box around */
-.tab {
-  overflow: hidden;
-  border: 3px solid #ccc;
-  background-color: #f1f1f1;
-}
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-/* Style the buttons inside the tab */
-.tab.button_r {
-  background-color: red;
-	color: blue;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;	
-}	
-/* Change background color of buttons on hover */
-.tab button_r:hover {
-  background-color: #ddd;
-}
-/* Create an active/current tablink class */
-.tab button_r.active {
-  background-color: #ccc;
-}
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}	
-.button {
-  background-color: #053fec;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-.button:hover {
-  background-color: #66b3ff;
-}
-.button_red {
-  background-color: #ff0000;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-.button_red:hover {
-  background-color: #ffb3b3;
-}
-#grey {
-  background-color: #cccccc;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-#grey:hover {
-	background-color: #272829;
-	color: white;
-}	
-#r {
-  background-color: #f20606;
-  border: none;
-  color: whitesmoke;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}	
-#r:hover {
-  background-color: #f49090;
-	color: white;
-}
-#blue {
-  background-color: #0707b5;
-  border: none;
-  color: whitesmoke;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-#blue:hover {
-	background-color: #0066ff;
-	color: white;
-}
-	</style>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" /> 
 </head>
 <body>
 	<h1 id=title>People's Daily Brief</h1>
 
-	<h1>National US Newspapers</h1>	
+	<h2 class=section_title>National US Newspapers</h2>	
 	<div class="tab">
 		<form action="https://www.nytimes.com/" method="get" target="_blank">
-     	 <button id="blue" class=button_r type="submit">NY Times</button> </form>
-     	 		<form action="https://www.wsj.com/" method="get" target="_blank">
-         <button id=r type="submit">WSJ</button></form>
+     	 	<button id="blue" class=button_r type="submit">NY Times</button> </form>
+     	<form action="https://www.wsj.com/" method="get" target="_blank">
+      	<button id=r type="submit">WSJ</button></form>
 	 	<form action="https://www.washingtonpost.com/" method="get" target="_blank">
          <button id="blue" class=button_r type="submit">Washington Post</button> </form> 
-
-
-   		<form action="https://www.usatoday.com//" method="get" target="_blank">
+		<form action="https://www.usatoday.com//" method="get" target="_blank">
          <button id="grey" type="submit">USA Today</button></form>
-		 <form action="https://www.theepochtimes.com/" method="get" target="_blank">
-		<button id=r type="submit">Epoch Times</button></form>
+		<form action="https://www.theepochtimes.com/" method="get" target="_blank">
+			<button id=r type="submit">Epoch Times</button></form>
 		<form action="https://www.csmonitor.com/" method="get" target="_blank">
-		<button id="grey"type="submit">CS Monitor</button> </form>
-				<form action="https://www.bostonglobe.com/" method="get" target="_blank">
+			<button id="grey"type="submit">CS Monitor</button> </form>
+		<form action="https://www.bostonglobe.com/" method="get" target="_blank">
          <button id="blue" type="submit">Boston Globe</button> </form>	
-				<form action="chicagotribune.com" method="get" target="_blank">
+		<form action="chicagotribune.com" method="get" target="_blank">
          <button id=r type="submit">Chicago Tribune</button> </form>
-                  <form action="https://www.latimes.com/" method="get" target="_blank">
-		<button id="blue" type="submit">Los Angeles Times</button></form>
+      <form action="https://www.latimes.com/" method="get" target="_blank">
+			<button id="blue" type="submit">Los Angeles Times</button></form>
 
 		</div>
 
 
 
-	<h1>Local US Newspapers</h1>	
+	<h2 class=section_title>Local US Newspapers</h2>	
 	<div class="tab">
 		<form action="https://nypost.com/" method="get" target="_blank">
          <button id=r type="submit">NY Post</button> </form>
-
 		<form action="https://www.the-sun.com/" method="get" target="_blank">
          <button id=r type="submit">US Sun</button></form>
 		<form action="https://www.newsday.com" method="get" target="_blank">
@@ -222,24 +64,20 @@ table, th, td {
          <button id="blue"type="submit">Miami Herald </button> </form>
 		<form action="https://www.nj.com/starledger/" method="get" target="_blank">
          <button id="blue"type="submit">NJ Star-Ledger</button> </form>
-         
-         		 <form action="https://richmond.com/" method="get" target="_blank">
+      <form action="https://richmond.com/" method="get" target="_blank">
 			<button id=r type="submit">Richmond Times-Dispatch</button> </form>
 		<form action="https://www.unionleader.com/" method="get" target="_blank">
 			<button id=r type="submit">New Hampshire Union Leader</button> </form>
 		<form action="https://www.detroitnews.com/" method="get" target="_blank">
 			<button id=r type="submit">The Detroit News</button> </form>
-         
 		<form acti on="https://chicago.suntimes.com/" method="get" target="_blank">
          <button id="blue"type="submit">Chicago Suntimes</button> </form>
 		<form action="https://www.washingtontimes.com/" method="get" target="_blank">
          <button  id=r type="submit">Washington Times</button> </form>
 		<form action="https://www.baltimoresun.com/" method="get" target="_blank">
          <button id="blue" type="submit">The Baltimore Sun</button> </form>
-
 		 <form action="https://www.sfchronicle.com/" method="get" target="_blank">
 			<button id="blue" type="submit"> San Francisco Chronicle</button> </form>
-
 		 <form action="https://www.desmoinesregister.com/" method="get" target="_blank">
 			<button id=r type="submit">The Des Moines Register</button> </form>
 		 
@@ -302,17 +140,10 @@ table, th, td {
 
 		<form action="https://www.???????.com/" method="get" target="_blank">
          <button id="blue" type="submit">Seattle Times</button> </form>
-         
-
-         
-
-
-
-
 
 	</div>	
 	
-	<h1>Wire Sevices</h1>
+	<h2 class=section_title>Wire Sevices</h2>
 		<div class="tab">
 			<form action="https://apnews.com/" method="get" target="_blank">
          	<button  id="grey"type="submit">AP</button></form>
@@ -329,78 +160,91 @@ table, th, td {
 
 		</div>
 
-	<h1>Web News</h1>
+	<h2 class=section_title>Web News</h2>
 	<div class="tab">
 		<form action="https://www.thedailybeast.com/" method="get" target="_blank">
-      	<button type="submit">Daily Beast</button> </form>		
+      	<button id="grey" type="submit">Daily Beast</button> </form>		
 		<form action="https://theintercept.com/" method="get" target="_blank">
-      	<button type="submit">Intercept</button> </form>				
+      	<button id="grey" type="submit">Intercept</button> </form>				
 		<form action="https://www.salon.com/" method="get" target="_blank">
-			<button type="submit">Salon</button></form>		
+			<button  id="grey" type="submit">Salon</button></form>		
 		<form action="https://www.axios.com/" method="get" target="_blank">
-      	<button type="submit">Axios</button></form>	
+      	<button id="grey" type="submit">Axios</button></form>	
 		<form action="https://www.breitbart.com/" method="get" target="_blank">
-        <button type="submit">Breitbart</button></form>	
+        <button id="grey" type="submit">Breitbart</button></form>	
 		<form action="https://www.thebulwark.com/" method="get" target="_blank">
-     		<button type="submit">Bulwark</button> </form>		
+     		<button id="grey" type="submit">Bulwark</button> </form>		
 		<form action="https://puck.news/" method="get" target="_blank">
-      	<button type="submit">Puck</button></form>
+      	<button id="grey" type="submit">Puck</button></form>
 		<form action="https://www.semafor.com/" method="get" target="_blank">
-      	<button type="submit">Semafor</button></form>	
+      	<button id="grey" type="submit">Semafor</button></form>	
 		<form action="https://slate.com/" method="get" target="_blank">
-      	<button type="submit">Slate</button></form>	
+      	<button id="grey" type="submit">Slate</button></form>	
 		<form action="https://www.drudgereport.com/" method="get" target="_blank">
-      	<button type="submit">Drudge</button></form>	
+      	<button id="grey" type="submit">Drudge</button></form>	
 		<form action="https://news.yahoo.com/" method="get" target="_blank">
-      	<button type="submit">Yahoo!</button></form>	
+      	<button id="grey" type="submit">Yahoo!</button></form>	
 		<form action="" method="get" target="_blank">
-      	<button type="submit">Axios</button></form>	
+      	<button id="grey" type="submit">Axios</button></form>	
 		<form action="" method="get" target="_blank">
-      	<button type="submit">Alternet</button></form>	
+      	<button id="grey" type="submit">Alternet</button></form>	
 		<form action="https://www.theblaze.com/" method="get" target="_blank">
-      	<button type="submit">Blaze</button></form>	
+      	<button id="grey" type="submit">Blaze</button></form>	
 		<form action="https://theatlasnews.co/" method="get" target="_blank">
-      	<button type="submit">Atlas</button></form>	
+      	<button id="grey" type="submit">Atlas</button></form>	
 		<form action="https://www.thebulwark.com/" method="get" target="_blank">
-      	<button type="submit">Bulwark</button></form>	
+      	<button id="grey" type="submit">Bulwark</button></form>	
 		<form action="https://www.breitbart.com/" method="get" target="_blank">
-      	<button type="submit">Breitbart</button></form>	
+      	<button id="grey" type="submit">Breitbart</button></form>	
 		<form action="https://www.dailykos.com/" method="get" target="_blank">
-      	<button type="submit">Daily Kos</button></form>	
+      	<button id="grey" type="submit">Daily Kos</button></form>	
 		<form action="https://www.msn.com/en-us/news/" method="get" target="_blank">
-      	<button type="submit">MSN</button></form>	
+      	<button id="grey" type="submit">MSN</button></form>	
 		<form action="https://www.vox.com/" method="get" target="_blank">
-      	<button type="submit">VOX</button></form>	
+      	<button id="grey" type="submit">VOX</button></form>	
 		<form action="https://www.theamericanreporter.com/" method="get" target="_blank">
-      	<button type="submit">American Reporter</button></form>	
+      	<button id="grey" type="submit">American Reporter</button></form>	
 		<form action="https://www.villagevoice.com/" method="get" target="_blank">
-      	<button type="submit">Village Voice</button></form>	
+      	<button id="grey" type="submit">Village Voice</button></form>	
 		<form action="https://www.propublica.org/" method="get" target="_blank">
-      	<button type="submit">Pro Publica</button></form>	
+      	<button id="grey"type="submit">Pro Publica</button></form>	
 		<form action="https://www.newsnationnow.com/" method="get" target="_blank">
-      	<button type="submit">News Nation</button></form>	
+      	<button id="grey"type="submit">News Nation</button></form>	
 		<form action="https://www.pastemagazine.com/" method="get" target="_blank">
-      	<button type="submit">Paste</button></form>	
+      	<button id="grey" type="submit">Paste</button></form>	
 		<form action="https://reason.com/" method="get" target="_blank">
-      	<button type="submit">Reason</button></form>	
+      	<button id="grey" type="submit">Reason</button></form>	
 		<form action="https://dailycaller.com/" method="get" target="_blank">
-      	<button type="submit">Daily Caller</button></form>	
+      	<button id="grey" type="submit">Daily Caller</button></form>	
 		<form action="https://www.vice.com/en/section/news" method="get" target="_blank">
-      	<button type="submit">Vice</button></form>	
+      	<button id="grey" type="submit">Vice</button></form>	
 		<form action="https://jezebel.com/" method="get" target="_blank">
-      	<button type="submit">Jezebel</button></form>
+      	<button id="grey" type="submit">Jezebel</button></form>
 		<form action="https://qz.com/" method="get" target="_blank">
-      	<button type="submit">QZ</button></form>
+      	<button id="grey" type="submit">QZ</button></form>
 		<form action="https://www.theroot.com/" method="get" target="_blank">
-      	<button type="submit">Root</button> </form>		
+      	<button id="grey" type="submit">Root</button> </form>		
 		<form action="https://www.avclub.com/" method="get" target="_blank">
-      	<button type="submit">AV Club</button> </form>		
+      	<button id="grey" type="submit">AV Club</button> </form>		
 		<form action="https://scrippsnews.com/" method="get" target="_blank">
-      	<button type="submit">Scripps</button> </form>		
+      	<button id="grey" type="submit">Scripps</button> </form>	
+		<form action="https://monocle.com/" method="get" target="_blank">
+      	<button id="grey" type="submit">Monocle</button> </form>	
+
+
+
+		<form action="https://prospect.org/" method="get" target="_blank">
+      	<button id="blue" type="submit">The American Prospect</button> </form>	
+				<form action="https://harpers.org/" method="get" target="_blank">
+      	<button id="blue" type="submit">Harper's Magazine</button> </form>	
+				<form action="https://www.motherjones.com/" method="get" target="_blank">
+      	<button id="blue" type="submit">Mother Jones</button> </form>	
+						<form action="https://progressive.org/" method="get" target="_blank">
+      	<button id="blue" type="submit">The Progressive</button> </form>
+		
 	</div>
-	other
-	https://monocle.com/
-	https://techstartups.com/
+
+	
 
 Blue
 	
@@ -408,10 +252,9 @@ The American Prospect
 Harper's Magazine
 Mother Jones
 The Progressive
-Wired Magazine
 https://www.sierraclub.org/sierra
 
-	<h1>Political News</h1>
+	<h2 class=section_title>Political News</h2>
 		<div class="tab">
 		<form action="https://www.politico.com/" method="get" target="_blank">
       	<button type="submit">Politico</button></form>	
@@ -421,13 +264,9 @@ https://www.sierraclub.org/sierra
       	<button type="submit">FiveThirtyEight</button></form>	
 		<form action="https://thehill.com/" method="get" target="_blank">
       	<button type="submit">The Hill</button></form>
-		
-		
-		
 		</div>
 	
-	<h1>TV and Raido News</h1>
-	
+	<h2 class=section_title >TV and Raido News</h2>
 	<div class="tab">
 		<form action="https://www.foxnews.com/" method="get" target="_blank">
       	<button type="submit">Fox</button></form>	
@@ -452,11 +291,9 @@ https://www.sierraclub.org/sierra
 		<form action="https://www.oann.com/" method="get" target="_blank">
       	<button type="submit">VOA</button></form>
 		<form action="https://www.voanews.com/" methohttps://www.voanews.com/d="get" target="_blank">		</form>	
-			
-
 	</div>
 	
-	<h1>Magazines</h1>
+	<h2 class=section_title>Magazines</h2>
 	<div class="tab">	
 		<form action="https://www.theatlantic.com/" method="get" target="_blank">
          <button type="submit">Atlantic</button></form>		
@@ -481,7 +318,7 @@ https://www.sierraclub.org/sierra
 		</div>	
 
 		
-	<h1>Finance</h1>
+	<h2 class=section_title>Finance</h2>
 		<div class="tab">
    		<form action="https://www.bloomberg.com/" method="get" target="_blank">
          	<button type="submit">Bloomberg</button></form>		
@@ -499,7 +336,7 @@ https://www.sierraclub.org/sierra
          	<button type="submit">Barrons</button></form>		
 		</div>
 	
-	<h1>Sports</h1>
+	<h2 class=section_title>Sports</h2>
 		<div class="tab">
 		<form action="https://www.theringer.com/" method="get" target="_blank">
          <button type="submit">Ringer</button></form>	
@@ -518,7 +355,7 @@ https://www.sierraclub.org/sierra
 		</div>
 	
 	
-	<h1>Think Tanks</h1>
+	<h2 class=section_title>Think Tanks</h2>
 		<div class="tab">
 		<form action="https://www.pewresearch.org/" method="get" target="_blank">
          <button type="submit">Pew</button></form>	
@@ -562,8 +399,7 @@ https://www.sierraclub.org/sierra
          <button type="submit"></button></form>		
 		</div>
 		
-		
-	<h1>Overseas</h1>
+	<h2 class=section_title>Overseas</h2>
 		<div class="tab">
 		<form action="https://www.theguardian.com/uk" method="get" target="_blank">
          <button type="submit">Guardian</button></form>	
@@ -611,8 +447,7 @@ https://www.sierraclub.org/sierra
          <button type="submit">RT</button></form>				
 	</div>
 		
-		
-	<h1>Science & Tech</h1>
+	<h2 class=section_title>Science & Tech</h2>
 		<div class="tab">
 		<form action="https://www.nature.com/" method="get" target="_blank">
          <button type="submit">Nature</button></form>	
@@ -659,10 +494,16 @@ https://www.sierraclub.org/sierra
 		<form action="https://www.space.com/" method="get" target="_blank">
          <button type="submit">Space</button></form>		
 		<form action="https://www.theguardian.com/science" method="get" target="_blank">
-         <button type="submit">Guardian</button></form>		
+         <button type="submit">Guardian</button></form>	
+		<form action="https://www.dev.to" method="get" target="_blank">
+         <button type="submit">Dev</button></form>	
+		<form action="https://techstartups.com/" method="get" target="_blank">
+         <button type="submit">Tech Startups</button></form>	
+
+			https://www.sierraclub.org/sierra
 		</div>
 	
-	<h1>Propaganda</h1>
+	<h2 class=section_title>Propaganda</h2>
 		<div class="tab">
 		<form action="https://sputnikglobe.com/" method="get" target="_blank">
          <button type="submit">Sputnik</button></form>	
@@ -670,7 +511,7 @@ https://www.sierraclub.org/sierra
          <button type="submit">TASS</button></form>			
 	</div>
 	
-	<h1>National Security</h1>
+	<h2 class=section_title>National Security</h2>
 		<div class="tab">
 		<form action="https://www.lawfareblog.com/" method="get" target="_blank">
       	<button type="submit">Lawfare</button></form>	
@@ -685,7 +526,7 @@ https://www.sierraclub.org/sierra
 		<form action="https://www.justsecurity.org/" method="get" target="_blank">
          <button type="submit">Just Security</button></form>
 		<form action="https://jnslp.com/" method="get" target="_blank">
-         <button type="submit">jnslp</button></form>
+         <button type="submit">Journal of National Security Law and Policy</button></form>
 		<form action="https://www.rand.org/topics/national-security-and-terrorism.html" method="get" target="_blank">
          <button type="submit">Rand</button></form>
 		<form action="https://warontherocks.com/" method="get" target="_blank">
@@ -700,23 +541,25 @@ https://www.sierraclub.org/sierra
          <button type="submit">War Mapper</button></form>
 	</div>
 	
-	<h1>Entertainment</h1>
+	<h2 class=section_title>Entertainment</h2>
 		<div class="tab">
 		<form action="https://www.avclub.com/" method="get" target="_blank">
       	<button type="submit">AV Club</button> </form>	
 		<form action="https://www.rollingstone.com/" method="get" target="_blank">
       	<button type="submit">Rolling Stone</button> </form>				
-			
-			
-	
-			
+		<form action="https://www.theverge.com/" method="get" target="_blank">
+      	<button type="submit">The Verge</button> </form>			
 	</div>
-<h1>Other Versions of the site</h1>
+
+<h2 class=section_title>Sites about news & news bias</h2>
+	<div class="tab">
+	<form action="https://en.wikipedia.org/wiki/List_of_newspapers_in_the_United_States" method="get" target="_blank">
+      	<button type="submit">Wiki list U.S. newspapers</button> </form>
+	</div>
+<h2 class=section_title>Other Versions of the site</h2>
 	<a href="./website3.html">place holder images wireframe</a>
    <a href="./website4.html">pills for sites</a>
    <a href="./wordcloud.html">wordcloud</a>
    
-   Sources about News
-   https://en.wikipedia.org/wiki/List_of_newspapers_in_the_United_States
 </body>
 </html> 

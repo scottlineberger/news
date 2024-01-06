@@ -1,0 +1,163 @@
+/*style for PDB title   */
+#title {
+	color: black;
+	font-size: 70px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	border-radius: 16px;
+	background-color:DodgerBlue;
+}
+
+/*not sure this is doing anything */
+table, th, td {
+  border:13px solid black;
+}
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.body {font-family: Arial;}
+/* Style the tab; tab = box around */
+
+.section_title{
+	padding-top: 50px
+}
+.tab {
+  overflow: hidden;
+  border: 3px solid #ccc;
+  background-color: #f1f1f1;
+	
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+/* Style the buttons inside the tab */
+.tab.button_r {
+  background-color: red;
+	color: blue;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;	
+}	
+/* Change background color of buttons on hover */
+.tab button_r:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button_r.active {
+  background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}	
+.button {
+  background-color: #053fec;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button:hover {
+  background-color: #66b3ff;
+}
+.button_red {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button_red:hover {
+  background-color: #ffb3b3;
+}
+#grey {
+  background-color: #cccccc;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+#grey:hover {
+	background-color: #272829;
+	color: white;
+}	
+#r {
+  background-color: #f20606;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}	
+#r:hover {
+  background-color: #f49090;
+	color: white;
+}
+#blue {
+  background-color: #0707b5;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+#blue:hover {
+	background-color: #0066ff;
+	color: white;
+}

@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"name": "New York Times",
+		"url": "https://www.nytimes.com/"
+		"lean": "liberal"
+		"scope": "national"
+	},
+	{
+		"id": 2,
+		"name": "Wall Street Journal",
+		"url": "https://www.wsj.com/"
+		"lean": "conservative"
+		"scope": "national"
+	},
+	{
+		"id": 3,
+		"name": "The Washington Post",
+		"url": "https://www.washingtonpost.com/"
+		"lean": "liberal"
+		"scope": "national"
+	},
+]
